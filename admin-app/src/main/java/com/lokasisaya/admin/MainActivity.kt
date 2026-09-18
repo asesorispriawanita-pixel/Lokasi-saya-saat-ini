@@ -79,7 +79,7 @@ class MainActivity : AppCompatActivity(), OnMapReadyCallback {
 
         codeInput = EditText(this).apply {
             hint = "Nomor / kode target"
-            singleLine = true
+            setSingleLine(true)
         }
 
         val addButton = Button(this).apply {
