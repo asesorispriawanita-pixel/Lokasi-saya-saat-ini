@@ -57,7 +57,7 @@ class MainActivity : AppCompatActivity() {
         codeInput = EditText(this).apply {
             hint = "Nomor HP / kode pengguna"
             textSize = 18f
-            singleLine = true
+            setSingleLine(true)
         }
 
         val startButton = Button(this).apply {
