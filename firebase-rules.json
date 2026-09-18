@@ -1,0 +1,15 @@
+{
+  "rules": {
+    ".read": false,
+    ".write": false,
+    "rooms": {
+      "$room": {
+        "target": {
+          ".read": "auth != null",
+          ".write": "auth != null",
+          ".validate": "newData.hasChildren(['nama','nomor','latitude','longitude','akurasi','baterai','waktu','timestamp','status','gerak'])"
+        }
+      }
+    }
+  }
+}
