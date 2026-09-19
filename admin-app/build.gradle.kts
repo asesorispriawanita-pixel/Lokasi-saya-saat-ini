@@ -46,6 +46,6 @@ dependencies {
     implementation("com.google.firebase:firebase-auth")
     implementation("com.google.firebase:firebase-database")
 
-    // OpenStreetMap - tidak membutuhkan Google Play Services
+    // OpenStreetMap
     implementation("org.osmdroid:osmdroid-android:6.1.20")
 }
