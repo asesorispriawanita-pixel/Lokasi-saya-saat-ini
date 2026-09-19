@@ -34,10 +34,8 @@ jobs:
         run: gradle :target-app:assembleDebug --stacktrace
 
       - name: Build Admin APK
-        run: |
-          gradle :admin-app:assembleDebug \
-            -PMAPS_API_KEY="${{ secrets.MAPS_API_KEY }}" \
-            --stacktrace
+  run: |
+    gradle :admin-app:assembleDebug --stacktrace
 
       - name: Collect APKs
         run: |
